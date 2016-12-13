@@ -9,7 +9,7 @@ namespace MyTranslator
     {
         static void Main(string[] args)
         {
-            /* тестовый код:
+			/* тестовый код:
              * begin
              * var i := 1;
              * end
