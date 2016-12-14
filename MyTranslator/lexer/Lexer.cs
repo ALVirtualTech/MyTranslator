@@ -54,8 +54,9 @@ namespace MyTranslator
 		public static readonly int downtosy = 90; // downto
 		public static readonly int beginsy = 91; // begin
 		public static readonly int endsy = 92; // end
-
-	}
+        internal static int arraysy;
+        internal static int ofsy;
+    }
 
 	public struct Key
 	{

@@ -34,7 +34,17 @@ namespace MyTranslator
 			statementpart(); // раздел операторов
 		}
 
-		public void whilestatement()
+        private void statementpart()
+        {
+            throw new NotImplementedException();
+        }
+
+        private void procfuncpart()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void whilestatement()
 		{
 			/* анализ конструкции цикл с предусловием */
 			accept(Symbol.whilesy);
@@ -98,7 +108,12 @@ namespace MyTranslator
 			type();
 		}
 
-		public void arraytype()
+        private void type()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void arraytype()
 		{
 			accept(Symbol.arraysy);
 			accept(Symbol.lbracket);
@@ -113,7 +128,18 @@ namespace MyTranslator
 			type();
 		}
 
-		public void variable()
+        private void accept(object ofsy)
+        {
+            throw new NotImplementedException();
+        }
+
+
+        private void simpletype()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void variable()
 		{
 			/* анализ конструкции <переменная> */
 			accept(Symbol.ident);
@@ -143,7 +169,12 @@ namespace MyTranslator
 			}
 		}
 
-		public void ifstatement()
+        private void expression()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void ifstatement()
 		{
 			accept(Symbol.ifsy);
 			expression();
@@ -155,5 +186,10 @@ namespace MyTranslator
 				statement();
 			}
 		}
-	}
+
+        private void statement()
+        {
+            throw new NotImplementedException();
+        }
+    }
 }
